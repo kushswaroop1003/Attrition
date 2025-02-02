@@ -36,7 +36,7 @@ jobs:
     - name: Deploy to Azure Container Apps
       run: |
         az containerapp create --name attritionml \
-          --resource-group Kush1 \
+          --resource-group Kush2 \
           --image attrition.azurecr.io/my-ml-app:v1 \
           --registry-server attrition.azurecr.io \
           --registry-username ${{ secrets.ACR_USERNAME }} \
