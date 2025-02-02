@@ -33,13 +33,13 @@ def preprocess_data(data:pd.DataFrame) -> Tuple[pd.DataFrame,pd.Series]:
     print(df)
     print("-----------")
     # Ensure target column exists
-    target_column = " Attrition"
+    target_column = "Attrition"
     if target_column not in df.columns:
         raise ValueError(f"Column '{target_column}' not found in the dataset")
     
     # Split features and target
     X = df.drop(target_column, axis=1)
-    y = df[" Attrition"]
+    y = df["Attrition"]
 
     return X,y
 

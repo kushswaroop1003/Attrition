@@ -25,7 +25,7 @@ import pickle
 
 def train_model():
     #Load Data
-    data_path = "C:\Users\WalkingTree\Desktop\KC\Attrition\data\data.csv"
+    data_path = "C:\\Users\\WalkingTree\\Desktop\KC\Attrition\data\data.csv"
 
     if not os.path.exists(data_path):
         print(f'Error: {data_path} does not exist')
